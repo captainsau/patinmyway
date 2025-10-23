@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevWeb Patin</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body{margin:0;font-family:Arial;background:url('background.jpg') no-repeat center center fixed;background-size:cover;}
+    .top-bar{background:#0056d6;color:#fff;padding:5px 20px;display:flex;justify-content:space-between;font-size:14px;}
+    .header{background:#ffffff;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;gap:15px;}
+    .logo{font-weight:bold; color:#33CCFF; font-size:40px;}
+    .search-box{width:100px;padding:5px;border-radius:20px;border:1px solid #ccc;}
+    .btn-search{background:linear-gradient(#CCFFFF,#0033FF);color:#fff;border:none;border-radius:20px;padding:10px 20px;cursor:pointer;}
+    .navbar{background:linear-gradient(#33CCFF, #1FA3FF);display:flex;justify-content:center;gap:30px;padding:10px 0;}
+    .navbar a{color:#fff;text-decoration:none;font-weight:bold;}
+    .layout{display:flex;max-width:1200px;margin:20px auto;gap:20px;}
+    .sidebar{width:25%;background:#fff;border-radius:5px;overflow:hidden;}
+    .sidebar h3{background:linear-gradient(#33CCFF, #1FA3FF);color:#fff;margin:0;padding:15px;}
+    .sidebar ul{list-style:none;padding:0;margin:0;}
+    .sidebar li{padding:12px 15px;border-bottom:1px solid #eee;cursor:pointer;}
+    .main-content{flex:1;}
+    .extra-banners{max-width:1200px;margin:40px auto;display:block;padding:20px 0;}
+    .extra-banners .banner-card{width:80%;height:500px;margin:0 100px;background-size:cover;background-position:center;border-radius:8px;box-shadow:0 30px 60px rgba(0,0,0,0.7);}
+    .footer{display:block;}
+.footer p{margin:0 0 5px 0;color:#ffffff;}
+</style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo" style="font-family:Aachen;background:linear-gradient(#CCFFFF,#0033FF);-webkit-background-clip:text;color:transparent;"><img src="LogoSangTao.png" alt="Logo" style="height:50px;"> Patin My Way</div>
+    <input type="text" placeholder="Tìm kiếm sản phẩm" class="search-box" style="margin-left:auto;margin-right:5px;width:120px;" />
+    <button class="btn-search">🔍</button>
+  </header>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="#">TRANG CHỦ</a>
+    <a href="#">MENU SẢN PHẨM</a>
+    <a href="#">GIỚI THIỆU</a>
+    <a href="#">HỆ THỐNG CỬA HÀNG</a>
+    <a href="#">TIN TỨC</a>
+    <a href="#">LIÊN HỆ</a>
+  </nav>
+    
+  <!-- Extra banners -->
+  <section class="extra-banners">
+    <div class="banner-card" style="background-image:url('banner1.jpg')"> </div>
+	<p style="text-align:center;background:#0033FF;-webkit-background-clip:text;color:transparent;margin-top:15px;">Banner 1</p>
+    <div class="banner-card" style="background-image:url('banner2.jpg')"> </div>
+	<p style="text-align:center;background:#0033FF;-webkit-background-clip:text;color:transparent;margin-top:15px;">Banner 2</p>
+    <div class="banner-card" style="background-image:url('banner3.jpg')"> </div>
+	<p style="text-align:center;background:#0033FF;-webkit-background-clip:text;color:transparent;margin-top:15px;">Banner 3</p>
+    <div class="banner-card" style="background-image:url('banner4.jpg')"> </div>
+	<p style="text-align:center;background:#0033FF;-webkit-background-clip:text;color:transparent;margin-top:15px;">Banner 4</p>
+
+ </section>
+  <!-- Danh mục sản phẩm -->
+  <aside class="sidebar">
+    <h3>DANH MỤC SẢN PHẨM</h3>
+    <ul>
+      <li>Giới thiệu doanh nghiệp</li>
+      <li>Giày Patin Trẻ Em</li>
+      <li>Giày Patin Người Lớn</li>
+      <li>Xe Scooter Trẻ Em</li>
+      <li>Ván Trượt</li>
+    </ul>
+  </aside>
+
+  <!-- Main content -->
+  <main class="main-content">
+    <h2>Sản phẩm nổi bật</h2>
+    <div class="products">
+      <div class="product-card">Sản phẩm 1</div>
+      <div class="product-card">Sản phẩm 2</div>
+      <div class="product-card">Sản phẩm 3</div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>thethaomyway@gmail.com</p>
+    <p>Ha Noi, Viet Nam</p>
+    <p>© 2024 TheGioiPatin. All rights reserved.</p>
+  </footer>
+</body>
+</html>
